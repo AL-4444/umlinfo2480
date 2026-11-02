@@ -3,3 +3,6 @@ Assignment 1:
 Question: "Why did the chicken cross the road?"
 
 Give me your best answer: Because it was going to KFC
+
+ A tad cannabalistic but I guess a good meal is a good meal! Nice job with the cloning 
+ and branching.
