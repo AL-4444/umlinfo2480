@@ -1,0 +1,16 @@
+<p><strong>Exercise:</strong>Make an ordered list ( using the ol and li tags ). For each item, output a math problem using 
+    each operator least once and two numbers between 1 and 9 ( i.e. 1+9=????? ).</p>
+
+
+
+<bx:output>
+    <ol>
+        <li>Addition 5 + 5 = #5+5#</li>
+        <li>Subtraction 8 - 3 = #8-3#</li>
+        <li>Multiplication 7 * 4 = #7*4#</li>
+        <li>Division 6 / 2 = #6/2#</li>
+        <li>Modulus 5 % 4 = #5%4#</li>
+        <li>Exponents 2 ^ 5 = #2^5#</li>
+    </ol>
+</bx:output>
+

@@ -1,0 +1,64 @@
+<h3>My Form</h3>
+<p>Use HTML to create a form which submits to the same page. Make your form with 5 inputs that coincide with the 
+    properties in your database. On the page include <code>&lt;bx:dump var="#form#" label="The Form Data" /></code> 
+    so you can test the submission of the form.</p>
+
+
+
+
+<bx:output>
+
+    <h3>Book Information Form</h3>
+
+    <form method="post" action="#cgi.script_name#?p=myForm">
+
+        <p>
+            <label for="title">Book Title:</label>
+            <input type="text"
+                   id="title"
+                   name="title"
+                   required />
+        </p>
+
+        <p>
+            <label for="author">Author:</label>
+            <input type="text"
+                   id="author"
+                   name="author"
+                   required />
+        </p>
+
+        <p>
+            <label for="publisher">Publisher:</label>
+            <input type="text"
+                   id="publisher"
+                   name="publisher"
+                   required />
+        </p>
+
+        <p>
+            <label for="yearPublished">Year Published:</label>
+            <input type="number"
+                   id="yearPublished"
+                   name="yearPublished"
+                   required />
+        </p>
+
+        <p>
+            <label for="price">Price:</label>
+            <input type="number"
+                   id="price"
+                   name="price"
+                   step="0.01"
+                   required />
+        </p>
+
+        <p>
+            <input type="submit" value="Submit Book" />
+        </p>
+
+    </form>
+
+</bx:output>
+
+<bx:dump var="#form#" label="The Form Data" />

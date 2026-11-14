@@ -1,0 +1,67 @@
+<h3>My Variables</h3>
+<p id="a631de6b-7ec5-4bc0-a120-1d24205ecc0b" class=""><strong>Exercise:</strong> Create a new variable named <code>todayDate</code> and set it
+    today's date. </p>
+
+<hr/>
+
+
+<bx:set todayDate=now() />
+<bx:dump var="#todayDate#" />
+
+
+<p id="b0b17cfe-e668-4793-b3e9-00e27a9325fa" class=""><strong>Exercise</strong>: Format the output for todayDate to be more 
+    human-readable version of the todayDate variable BUT don&#x27;t change the underlying variable.</p>
+
+    <hr/>
+
+<bx:output>
+    #dateFormat(todayDate, "MMMM d, yyyy")#
+</bx:output>
+
+
+
+    <p id="fdd75171-c4ef-49e8-af90-0149b2170f0f" class=""><strong>Exercise</strong>: Below, add up the price of your 10 books in
+        your Excel Project. Can you do it with only one variable name? Let&#x27;s call it <code>totalBookCost</code>. Hint: Start
+        with <code>&lt;bx:set totalBookCost=0&gt;</code> and go from there. Think you can do it? Don&#x27;t forget to output the
+        final amount to the page.</p>    
+
+
+
+
+
+<bx:set totalBookCost=0 />
+
+<ol>
+    <li>
+        <bx:set totalBookCost=totalBookCost+16.48 />
+        <bx:output>The Paris Architect: $16.48</bx:output>
+    </li>
+
+    <li>
+        <bx:set totalBookCost=totalBookCost+28.00 />
+        <bx:output>Elizabeth & Margaret: $28.00</bx:output>
+    </li>
+
+    <li>
+        <bx:set totalBookCost=totalBookCost+7.99 />
+        <bx:output>The Bronze Bow: $7.99</bx:output>
+    </li>
+
+    <li>
+        <bx:set totalBookCost=totalBookCost+28.19 />
+        <bx:output>Children of Dune: $28.19</bx:output>
+    </li>
+
+    <li>
+        <bx:set totalBookCost=totalBookCost+18.95 />
+        <bx:output>The Evil Eye: $18.95</bx:output>
+    </li>
+</ol>
+
+<bx:output>
+    Total: $#totalBookCost#
+</bx:output>
+
+
+
+
